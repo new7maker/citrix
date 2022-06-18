@@ -5,3 +5,21 @@
         box-sizing: border-box;
     }
 }
+
+body {
+    font-family: $font-primary, $font-secondary;
+    font-size: $text-base-size;
+    color: $color-gray;
+    line-height: 118%;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: $text-lg;
+    color: $color-purple;
+    line-height: 123%;
+}
+
+a {
+    text-decoration: none;
+}
