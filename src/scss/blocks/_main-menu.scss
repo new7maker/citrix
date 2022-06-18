@@ -1,0 +1,41 @@
+.main-menu {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        + * {
+            margin-left: 88px;
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+
+        position: relative;
+
+        &::after {
+            content: '';
+            border-radius: 50%;
+            background: $color-red;
+            opacity: 0;
+            transition: opacity .13s linear;
+
+            display: block;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 50%;
+            top: calc(100% + 5px);
+            transform: translateX(-50%);
+        }
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
