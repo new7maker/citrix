@@ -1,0 +1,13 @@
+@use "sass:math";
+
+// px to em
+@function px_to_em($px, $font-size-base: $font-size-base) {
+    $result: (math.div($px, $font-size-base) * 1em);
+    @return $result;
+}
+
+// px to rem
+@function px_to_rem($px, $font-size-base: $font-size-base) {
+    $result: (math.div($px, $font-size-base) * 1rem);
+    @return $result;
+}
