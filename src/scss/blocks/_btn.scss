@@ -1,0 +1,13 @@
+.btn {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 122%;
+    color: $color-white;
+    background: $color-orange;
+    background-clip: padding-box;
+    border-radius: 50px;
+    border: 10px solid rgba(255, 161, 47, 0.5);
+
+    display: inline-block;
+    padding: 15px 75.5px;
+}

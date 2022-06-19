@@ -10,11 +10,11 @@ body {
     font-family: $font-primary, $font-secondary;
     font-size: $text-base-size;
     color: $color-gray;
-    line-height: 118%;
+    line-height: 125%;
 }
 
 h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: $text-lg;
     color: $color-purple;
     line-height: 123%;
@@ -23,4 +23,9 @@ h2 {
 a {
     text-decoration: none;
     color: $color-violet;
+}
+
+img {
+    display: block;
+    height: auto;
 }
