@@ -11,6 +11,8 @@ body {
     font-size: $text-base-size;
     color: $color-gray;
     line-height: 125%;
+
+    position: relative;
 }
 
 h2, .partners__caption {
