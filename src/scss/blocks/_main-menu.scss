@@ -1,13 +1,15 @@
 .main-menu {
     &__list {
         display: flex;
-    }
 
-    &__item {
-        + * {
-            margin-left: 88px;
+        @media screen and (max-width: 1713px) {
+            border-top: 4px solid $color-orange;
+
+            display: block;
         }
     }
+
+   
 
     &__link {
         font-weight: 500;
@@ -30,6 +32,48 @@
             left: 50%;
             top: calc(100% + 5px);
             transform: translateX(-50%);
+
+            @media screen and (max-width: 1713px) {
+                opacity: 1;
+
+                width: 25px;
+                height: 25px;
+                left: auto;
+                top: 50%;
+                right: 9px;
+                transform: translateY(-50%) translateX(0);
+
+            }
+        }
+
+        &_violet {
+            &::after {
+                background: $color-violet;                
+            }
+        }
+
+        &_orange {
+            &::after {
+                background: $color-orange;                
+            }
+        }
+
+        &_aqua {
+            &::after {
+                background: #94C9D7;                
+            }
+        }
+
+        &_navy-blue-dark {
+            &::after {
+                background: $color-navy-blue-dark;                
+            }
+        }
+
+        &_purple {
+            &::after {
+                background: #CAAFFD;                
+            }
         }
 
         &:hover {
@@ -37,5 +81,37 @@
                 opacity: 1;
             }
         }
+
+        @media screen and (max-width: 1713px) {
+            font-size: 18px;
+            line-height: 21.94px;
+            border-bottom: 4px solid $color-orange;
+
+            display: block;
+            padding: 30px 0;
+        }
+    }
+
+    &__item {
+        + * {
+            margin-left: 88px;
+
+            @media screen and (max-width: 1713px) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1713px) {
+        display: none;
+
+        position: absolute;
+        width: calc(100% - 30px);
+        top: calc(100% + 30px);
+        left: 15px;
+    }
+
+    &_active {
+        display: block;
     }
 }

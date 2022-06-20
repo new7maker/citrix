@@ -5,13 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     flsFunctions.isWebp();
 
+});
+
+let section_titles = document.querySelector('.section-title');
+
+console.log(section_titles);
+
+let menu_btn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.main-menu');
+
+menu_btn.addEventListener('click', function() {
+    menu.classList.toggle('main-menu_active');
 })
-
-function init() {
-    let map = new ymaps.Map('map', {
-        center: [45.05661613902117,42.01743746536805],
-        zoom: 16
-    });
-}
-
-ymaps.ready(init);
