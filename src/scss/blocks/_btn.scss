@@ -7,7 +7,15 @@
     background-clip: padding-box;
     border-radius: 50px;
     border: 10px solid rgba(255, 161, 47, 0.5);
+    cursor: pointer;
 
     display: inline-block;
     padding: 15px 75.5px;
+
+    &_sm {
+        background-color: #CAAFFD;
+        border: 10px solid rgba(202, 175, 253, 0.5);
+
+        padding: 10.5px 60px;
+    }
 }
