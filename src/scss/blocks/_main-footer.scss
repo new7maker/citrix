@@ -1,0 +1,27 @@
+.main-footer {
+    padding-bottom: 103px;
+
+    &__container {
+        max-width: 1683px + 30px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1713px) {
+            max-width: 835px;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 1713px) {
+        .contact-info__item:last-child {
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+}

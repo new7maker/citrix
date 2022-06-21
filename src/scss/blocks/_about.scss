@@ -1,0 +1,18 @@
+.about {
+    padding-bottom: 220px;
+    
+    &__image-box {
+        position: relative;
+    }
+
+    &__image {
+        width: initial;
+        height: initial;
+        object-fit: initial;
+        object-position: initial;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
