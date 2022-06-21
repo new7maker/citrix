@@ -1,0 +1,37 @@
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    width: 62px;
+    height: 43px;
+    position: relative;
+
+    @media screen and (min-width: 1714px) {
+        display: none;
+    }
+
+    &::before, &::after, &__center {
+        content: '';
+        background: $color-violet;
+        display: block;
+        width: 49px;
+        height: 5px;
+        position: absolute;
+        right: 0;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    &__center {
+        width: 62px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

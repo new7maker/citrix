@@ -1,0 +1,15 @@
+.decor-element {
+    z-index: -1;
+    position: absolute;
+    
+
+    &_1 {
+        top: -166px;
+        left: -345px;
+    }
+
+    &_2 {
+        bottom: -165px;
+        left: -578px;
+    }
+}
