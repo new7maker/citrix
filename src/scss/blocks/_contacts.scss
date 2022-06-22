@@ -1,10 +1,20 @@
 .contacts {
-    padding-bottom: 310px;
+    padding-bottom: 250px;
 
+    @media screen and (max-width: 1072px) {
+        padding-bottom: 220px;
+    }
+
+    @media screen and (max-width: 850px) {
+        padding-bottom: 30px;
+    }
+    
     &__container {
-        display: flex;
-        justify-content: space-between;
-        gap: 0 20px;
+        @media screen and (min-width: 851px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 0 20px;
+        }
     }
 
     &__title {
@@ -17,6 +27,15 @@
 
     &__info {
         margin-bottom: 30px;
+
+        @media screen and (max-width: 850px) {
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 10px 54px;
+        }
     }
 
     &__item + &__item {
@@ -38,6 +57,10 @@
 
         + .contacts__field {
             margin-top: 10px;
+
+            @media screen and (min-width: 751px) and (max-width: 850px) {
+                margin-top: 0;
+            }
         }
 
         &:focus-visible {
@@ -45,11 +68,32 @@
         }
     }
 
-    &__input {
-
+    &__text {
+        @media screen and (max-width: 850px) {
+            padding-bottom: 110px;
+        }
     }
 
-    &__textarea {
+    input[type="text"] {
+        @media screen and (max-width: 850px) {
+            width: 345px;
+
+            &:first-child {
+                float: left;
+            }
+
+            &:nth-child(2) {
+                float: right;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            width: 100%;
+            float: none
+        }
+    }
+
+    .contacts__textarea {
         resize: none; 
 
         display: initial;
@@ -63,19 +107,27 @@
             max-width: 470px;
             height: 227px;
         }
+
+        @media screen and (max-width: 850px) {
+            max-width: 100%;
+            height: 195px;
+            margin-top: 10px;
+        }
     }
 
     &__map {
-        border-radius: 50%;
-        border: 18px solid #CAAFFD;
-        box-shadow: 0px 0px 50px -14px #CAAFFD;
-
-        box-sizing: content-box;
-        align-self: flex-start;
-        flex-shrink: 0;
-        margin-top: -90px;
-        width: 54.605263157895%;
-        padding-bottom: 54.605263157895%;
+        @media screen and (min-width: 851px) {
+            border-radius: 50%;
+            border: 18px solid #CAAFFD;
+            box-shadow: 0px 0px 50px -14px #CAAFFD;
+    
+            box-sizing: content-box;
+            align-self: flex-start;
+            flex-shrink: 0;
+            margin-top: -90px;
+            width: 54.605263157895%;
+            padding-bottom: 54.605263157895%;
+        }
         overflow: hidden;
         position: relative;
 
@@ -89,6 +141,11 @@
             margin-top: 0;
             // width: 470px;
             // height: 470px;
+        }
+
+        @media screen and (max-width: 850px) {
+            margin: 0 -15px;
+            height: 305px;
         }
     }
 }

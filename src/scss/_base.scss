@@ -20,6 +20,10 @@ h2, .partners__caption {
     font-size: $text-lg;
     color: $color-purple;
     line-height: 123%;
+
+    @media screen and (max-width: 480px) {
+        font-size: 22px;
+    }
 }
 
 a {

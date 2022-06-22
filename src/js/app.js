@@ -12,8 +12,8 @@ let section_titles = document.querySelector('.section-title');
 console.log(section_titles);
 
 let menu_btn = document.querySelector('.menu-btn');
-let menu = document.querySelector('.main-menu');
+let main_header = document.querySelector('.main-header');
 
 menu_btn.addEventListener('click', function() {
-    menu.classList.toggle('main-menu_active');
+    main_header.classList.toggle('main-menu_active');
 })

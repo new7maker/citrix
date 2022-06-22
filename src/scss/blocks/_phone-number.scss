@@ -2,4 +2,12 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 120%;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 610px) {
+        display: none;
+    }
 }

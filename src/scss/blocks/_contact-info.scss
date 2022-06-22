@@ -4,13 +4,14 @@
     }
 
     &__item {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 120%;
     }
 
     &__strong {
         color: $color-purple;
         font-weight: 600;
+        line-height: 130%;
     }
 
     &_violet {
@@ -25,7 +26,7 @@
 
     &_sm {
         .contact-info__strong {
-            font-size: 32px;
+            font-size: 30px;
         }
     }
 }

@@ -1,5 +1,13 @@
 .main-footer {
-    padding-bottom: 103px;
+    padding-bottom: 100px;
+
+    @media screen and (max-width: 1597px) {
+        padding-bottom: 75px;
+    }
+
+    @media screen and (max-width: 850px) {
+        padding-bottom: 40px;
+    }
 
     &__container {
         max-width: 1683px + 30px;
@@ -8,20 +16,31 @@
     }
 
     &__contact {
+        max-width: 100%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        gap: 20px 28px;
 
-        @media screen and (max-width: 1713px) {
-            max-width: 835px;
+        @media screen and (max-width: 1597px) {
+            max-width: 772px;
             margin: 0 auto;
         }
     }
 
-    @media screen and (max-width: 1713px) {
-        .contact-info__item:last-child {
-            margin-top: 20px;
-            width: 100%;
+    @media screen and (max-width: 802px) {
+        .contact-info__item {
+            font-size: 16px;
+        }
+
+        .contact-info__strong {
+            font-size: 20px;
+        }
+
+        &__contact {
+            flex-direction: column;
         }
     }
+
 }

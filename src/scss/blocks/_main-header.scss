@@ -4,9 +4,17 @@
         max-width: 1683px + 30px;
         margin: 0 auto;
         padding: 20px 15px 0;
+        gap: 0 28px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
+    }
+
+    &__logo img {
+        @media screen and (max-width: 610px) {
+            width: 226px;
+            height: 68px;
+        }
     }
 }

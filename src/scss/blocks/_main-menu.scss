@@ -104,14 +104,19 @@
 
     @media screen and (max-width: 1713px) {
         display: none;
-
+        background: $color-white;
         position: absolute;
-        width: calc(100% - 30px);
-        top: calc(100% + 30px);
-        left: 15px;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        padding: 30px 15px 30px;
     }
+}
 
-    &_active {
+.main-header.main-menu_active {
+    background: $color-white;
+
+    .main-menu {
         display: block;
     }
 }

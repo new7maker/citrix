@@ -2,26 +2,53 @@
     text-align: center;
     padding-bottom: 220px;
 
+    @media screen and (max-width: 1072px) {
+        padding-bottom: 180px;
+    }
+
+    @media screen and (max-width: 712px) {
+        padding-bottom: 123px;
+    }
+
     &__container {
         box-shadow: 0px 0px 50px -3px #94C9D7;
         border: 18px solid #94C9D7;
         border-radius: 150px;
+        padding: 45px 45px 80px 45px;
 
-        padding: 46px 0 107px 0;
+        @media screen and (max-width: 863px) {
+            border-radius: 80px;
+            border-width: 6px;
+            padding: 35px 35px 50px 35px;
+            min-height: auto;
+        }
+
+        @media screen and (max-width: 417px) {
+            justify-content: space-between;
+            padding: 35px 14px 40px 14px;
+        }
     }
 
     &__title {
         margin-bottom: 30px;
     }
 
-    &__list {
-        display: flex;
-        justify-content: center;
-        gap: 0 123px;
+    &__item {
+        @media screen and (max-width: 671px) {
+           width: calc(50% - 21.5px);
+        }
     }
 
-    &__item {
-        width: 186px;
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px 75px;
+
+        @media screen and (max-width: 671px) {
+            justify-content: space-between;
+            column-gap: 43px;
+        }
     }
 
     &__caption {
@@ -33,9 +60,15 @@
         border: 3px solid;
 
         overflow: hidden;
-        max-width: 100%;
+        width: 186px;
         height: 186px;
-        margin-bottom: 30px;
+        margin: 0 auto 30px auto;
+
+        @media screen and (max-width: 863px) {
+            width: 130px;
+            height: 130px;
+            margin-bottom: 19px;
+        }
 
         &_orange {
             color: $color-orange;

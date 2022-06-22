@@ -18,6 +18,11 @@
     &__title {
         margin-bottom: 30px;
         max-width: 500px;
+
+        @media screen and (max-width: 712px) {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
     }
 
     &__image-box {
@@ -50,6 +55,18 @@
         @media screen and (max-width: 1072px) {
             width: 470px;
             height: 470px;
+        }
+
+        @media screen and (max-width: 950px) {
+            border-width: 12px;
+
+            width: 232px;
+            height: 232px;
+            margin-top: 0;
+        }
+
+        @media screen and (max-width: 712px) {
+            display: none;
         }
     }
 

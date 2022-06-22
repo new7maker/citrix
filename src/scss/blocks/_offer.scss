@@ -1,18 +1,55 @@
 .offer {
     &__container {
         padding-top: 132px;
+
+        @media screen and (max-width: 1072px) {
+            padding-top: 120px;
+        }
+
+        @media screen and (max-width: 950px) {
+            padding-top: 40px;
+        }
     }
 
     &__item {
         margin-bottom: 256px;
+
+        @media screen and (max-width: 1246px) {
+            margin-bottom: 180px;
+        }
+
+        @media screen and (max-width: 990px) {
+            margin-bottom: 150px;
+        }
+
+        @media screen and (max-width: 510px) {
+            margin-bottom: 123px;
+        }
     }
 
     &__descr {
         margin-bottom: 72px;
+
+        @media screen and (max-width: 950px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__btn {
         float: right;
         margin-right: 91px;
+
+        @media screen and (max-width: 950px) {
+            padding: 3px 38px;
+
+            margin-right: auto;
+            float: none;
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 100%;
+            padding: 8.5px 0;
+            text-align: center;
+        }
     }
 }
