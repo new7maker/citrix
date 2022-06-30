@@ -47,6 +47,11 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
-    "reset-css": "^5.0.1"
+    "console": "^0.7.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "reset-css": "^5.0.1",
+    "stream": "^0.0.2",
+    "util": "^0.12.4"
   }
 }

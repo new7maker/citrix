@@ -1,6 +1,10 @@
 .slide-menu {
-    display: none;
-    position: absolute;
-    top: 299px;
+    // display: none;
+    position: fixed;
+    top: 240px;
     left: 103px;
+
+    circle {
+        cursor: pointer;
+    }
 }
