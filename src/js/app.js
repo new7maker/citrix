@@ -90,14 +90,5 @@ window.onload = function() {
         };
     }
     
-    let item = section_titles[4];
-    
-    window.addEventListener('scroll', function() {
-        console.log('------');
-        console.log('bounding: ', item.getBoundingClientRect().top);
-        console.log('offset:', window.pageYOffset);
-    
-        console.log('sum: ', item.getBoundingClientRect().top + window.pageYOffset);
-    })
-    
+    let item = section_titles[4];    
 }
