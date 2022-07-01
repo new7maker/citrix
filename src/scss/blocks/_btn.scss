@@ -6,16 +6,41 @@
     background: $color-orange;
     background-clip: padding-box;
     border-radius: 50px;
-    border: 10px solid rgba(255, 161, 47, 0.5);
     cursor: pointer;
+    animation: shadow-orange 1.3s linear infinite;
 
     display: inline-block;
     padding: 15px 75.5px;
-
+    
     &_sm {
         background-color: #CAAFFD;
-        border: 10px solid rgba(202, 175, 253, 0.5);
+        animation: shadow-purple 1.3s linear infinite;
+
 
         padding: 10.5px 60px;
+    }
+}
+
+@keyframes shadow-orange {
+    0% {
+        box-shadow: 0px 0px 0px 0px rgba(255, 161, 47, 0.5);
+    }
+    50% {
+        box-shadow: 0px 0px 0px 10px rgba(255, 161, 47, 0.5);
+    }
+    75% {
+        box-shadow: 0px 0px 0px 5px rgba(255, 161, 47, 0.5);
+    }
+}
+
+@keyframes shadow-purple {
+    0% {
+        box-shadow: 0px 0px 0px 0px rgba(202, 175, 253, 0.5);
+    }
+    50% {
+        box-shadow: 0px 0px 0px 10px rgba(202, 175, 253, 0.5);
+    }
+    75% {
+        box-shadow: 0px 0px 0px 5px rgba(202, 175, 253, 0.5);
     }
 }
