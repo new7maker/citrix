@@ -105,6 +105,7 @@
     @media screen and (max-width: 1713px) {
         display: none;
         background: $color-white;
+        z-index: 99;
         position: absolute;
         width: 100%;
         top: 100%;

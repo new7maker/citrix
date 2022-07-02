@@ -12,6 +12,7 @@ window.onload = function() {
     let main_menu_link = document.querySelectorAll('.main-menu__link');
     let menu_btn = document.querySelector('.menu-btn');
     let main_header = document.querySelector('.main-header');
+    let main_menu = document.querySelector('.main-menu');;
     let body = document.body;
     let slide_menu = document.querySelector('.slide-menu');
     let slide_menu_circles = slide_menu.querySelectorAll('circle');
@@ -27,9 +28,10 @@ window.onload = function() {
         item.addEventListener('click', function(e) {
             e.preventDefault();
     
-            if(main_header.classList.contains('main-menu_active')) {
-                main_header.classList.remove('main-menu_active');
-            };
+            // if(main_header.classList.contains('main-menu_active')) {
+            //     main_header.classList.remove('main-menu_active');
+            // };
+            
             window.scrollTo({
                 top: section_position,
                 left: 0,
@@ -90,5 +92,11 @@ window.onload = function() {
         };
     }
     
-    let item = section_titles[4];    
+    // document.body.addEventListener('click', function(e) {
+    //     let target = e.target;
+
+    //     if(target != main_menu && target != menu_btn) {
+    //         main_header.classList.toggle('main-menu_active');
+    //     }
+    // })
 }
